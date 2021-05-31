@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="src/img/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="src/sass/main.scss" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="src/js/script.js" defer></script>
+
+        <title>Frontend Mentor | Room homepage</title>
+    </head>
+    <body>
+        <header class="header">
+            <img
+                src="src/img/icon-hamburger.svg"
+                alt="hamburger icon"
+                class="header__icon--open"
+            />
+            <figure class="header__logo-box">
+                <img src="src/img/logo.svg" alt="logo" class="header__logo" />
+            </figure>
+            <nav class="nav">
+                <img
+                    src="src/img/icon-close.svg"
+                    alt="hamburger icon"
+                    class="header__icon--close"
+                />
+                <ul class="nav__list">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">Shop</li>
+                    <li class="nav__item">About</li>
+                    <li class="nav__item">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="slider">
+                <section class="slider__img-box">
+                    <picture class="slider__img slider__img--active">
+                        <source
+                            srcset="src/img/mobile-image-hero-1.jpg"
+                            media="(max-width: 40.25em)"
+                        />
+                        <source
+                            srcset="src/img/desktop-image-hero-1.jpg"
+                            media="(min-width: 40.25em)"
+                        />
+                        <img
+                            src="src/img/desktop-image-hero-1.jpg"
+                            alt="image hero 1"
+                            class="img"
+                        />
+                    </picture>
+                    <picture class="slider__img">
+                        <source
+                            srcset="src/img/mobile-image-hero-2.jpg"
+                            media="(max-width: 40.25em)"
+                        />
+                        <source
+                            srcset="src/img/desktop-image-hero-2.jpg"
+                            media="(min-width: 40.25em)"
+                        />
+                        <img
+                            src="src/img/desktop-image-hero-2.jpg"
+                            alt="image hero 1"
+                            class="img"
+                        />
+                    </picture>
+                    <picture class="slider__img">
+                        <source
+                            srcset="src/img/mobile-image-hero-3.jpg"
+                            media="(max-width: 40.25em)"
+                        />
+                        <source
+                            srcset="src/img/desktop-image-hero-3.jpg"
+                            media="(min-width: 40.25em)"
+                        />
+                        <img
+                            src="src/img/desktop-image-hero-3.jpg"
+                            alt="image hero 1"
+                            class="img"
+                        />
+                    </picture>
+                </section>
+                <section class="slider__text-container">
+                    <div class="slider__text text-box slider__text--active">
+                        <h1>Discover innovative ways to decorate</h1>
+                        <p>
+                            We provide unmatched quality, comfort, and style for
+                            property owners across the country. Our experts
+                            combine form and function in bringing your vision to
+                            life. Create a room in your own style with our
+                            collection and make your property a reflection of
+                            you and what you love.
+                        </p>
+                        <button>
+                            Shop now
+                            <svg
+                                width="40"
+                                height="12"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon"
+                            >
+                                <path
+                                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                    fill="#000"
+                                    fill-rule="nonzero"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="slider__text text-box">
+                        <h1>We are available all across the globe</h1>
+                        <p>
+                            With stores all over the world, it's easy for you to
+                            find furniture for your home or place of business.
+                            Locally, we’re in most major cities throughout the
+                            country. Find the branch nearest you using our store
+                            locator. Any questions? Don't hesitate to contact us
+                            today.
+                        </p>
+                        <button>
+                            Shop now
+                            <svg
+                                width="40"
+                                height="12"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon"
+                            >
+                                <path
+                                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                    fill="#000"
+                                    fill-rule="nonzero"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="slider__text text-box">
+                        <h1>Manufactured with the best materials</h1>
+                        <p>
+                            Our modern furniture store provide a high level of
+                            quality. Our company has invested in advanced
+                            technology to ensure that every product is made as
+                            perfect and as consistent as possible. With three
+                            decades of experience in this industry, we
+                            understand what customers want for their home and
+                            office.
+                        </p>
+                        <button>
+                            Shop now
+                            <svg
+                                width="40"
+                                height="12"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon"
+                            >
+                                <path
+                                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                    fill="#000"
+                                    fill-rule="nonzero"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="slider__controls">
+                        <button
+                            class="slider__arrow slider__arrow--left"
+                        ></button>
+                        <button
+                            class="slider__arrow slider__arrow--right"
+                        ></button>
+                    </div>
+                </section>
+            </section>
+            <section class="about">
+                <figure class="about__img-box">
+                    <img
+                        src="src/img/image-about-dark.jpg"
+                        alt="image about dark"
+                        class="img"
+                    />
+                </figure>
+                <div class="about__text text-box">
+                    <h3>About our furniture</h3>
+                    <p>
+                        Our multifunctional collection blends design and
+                        function to suit your individual taste. Make each room
+                        unique, or pick a cohesive theme that best express your
+                        interests and what inspires you. Find the furniture
+                        pieces you need, from traditional to contemporary styles
+                        or anything in between. Product specialists are
+                        available to help you create your dream space.
+                    </p>
+                </div>
+                <figure class="about__img-box">
+                    <img
+                        src="src/img/image-about-light.jpg"
+                        alt="image about light"
+                        class="img"
+                    />
+                </figure>
+            </section>
+        </main>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by Cornale Massimiliano.
+        </div>
+    </body>
+</html>
