@@ -176,14 +176,16 @@ body {
 
     &__img-box {
         flex-basis: calc(70% - (#{$arrow-size} * 2));
-        min-height: max(70vh, 55rem);
         position: relative;
         overflow: hidden;
     }
 
     &__cover-animation {
         width: 100%;
-        min-height: max(70vh, 55rem);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: $color-black;
         transform: translateX(100%);
     }
