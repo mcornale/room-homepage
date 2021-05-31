@@ -81,9 +81,9 @@ body {
     }
 
     @include respond(small) {
-        margin: 4rem 6rem;
+        margin: 4rem 4rem;
         justify-content: center;
-        width: calc(100% - 12rem);
+        width: calc(100% - 8rem);
     }
 
     @include respond(xsmall) {
@@ -176,13 +176,14 @@ body {
 
     &__img-box {
         flex-basis: calc(70% - (#{$arrow-size} * 2));
+        min-height: max(70vh, 55rem);
         position: relative;
         overflow: hidden;
     }
 
     &__cover-animation {
         width: 100%;
-        height: 100%;
+        min-height: max(70vh, 55rem);
         background-color: $color-black;
         transform: translateX(100%);
     }
@@ -241,6 +242,10 @@ body {
 
         @include respond(medium) {
             padding: 0 6rem;
+        }
+
+        @include respond(small) {
+            padding: 0 4rem;
         }
 
         @include respond(xsmall) {
@@ -404,6 +409,10 @@ body {
         flex-direction: column;
         justify-content: center;
 
+        @include respond(small) {
+            padding: 6rem 4rem;
+        }
+
         @include respond(xsmall) {
             padding: 6rem 4rem;
         }
@@ -418,21 +427,18 @@ body {
     background-color: $color-white;
     padding: 1.2rem 1.8rem;
     font-size: 1rem;
+    line-height: 1.6;
     position: absolute;
     bottom: 0;
     right: 0;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 10rem;
     margin: 1.2rem;
     box-shadow: 0rem 0.4rem 2rem rgba($color-black, 0.1);
-    transition: all 0.4s;
+    display: inline-block;
 
     a {
         color: $color-very-dark-gray;
-    }
-
-    &:hover {
-        transform: translateY(-0.2rem);
     }
 
     @include respond(medium) {
